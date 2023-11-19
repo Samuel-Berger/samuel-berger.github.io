@@ -1,7 +1,7 @@
 --- 
 :layout: post
 :title: Installation of Jekyll on Fedora
-:date:   2023-11-19 22:35:51 +0100
+:date: 2023-11-19 22:35:51 +0100
 :categories: jekyll ruby fedora
 ---
 
