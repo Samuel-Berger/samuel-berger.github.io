@@ -9,8 +9,7 @@
 
 * Working WSL2 distribution.
 
-
-## Working Docker installation.
+## Working Docker installation
 
 On Windows this can be done by running `winget install Docker.DockerDesktop` in Powershell.
 You probably need to reboot the computer or at least log out and log in.
@@ -18,15 +17,15 @@ Then open Docker Desktop and make sure that WSL2-integration is activated.
 You might need to add your WSL-user to the docker group and adjust some permissions.
 Do that by running (in your WSL enviroment, probably Bash):
 
-``sh
+```sh
 sudo usermod -aG docker $USER
 ls -l /var/run/docker.sock
 sudo chmod 666 /var/run/docker.sock
-``
+```
 
 ## Run Ollama Via Docker
 
-Ollama helps you test differend AI models on the machine of your choice and is
+Ollama helps you test different AI models on the machine of your choice and is
 [now available as a docker image](https://ollama.com/blog/ollama-is-now-available-as-an-official-docker-image).
 In the WSL2 distribution of your choice run
 
@@ -52,7 +51,6 @@ You can see amount of avaialbe ram in WSL with `free -h`. There is also the opti
 3. Run the model with `docker exec -it ollama ollama run [libraryname]` for example
 `docker exec -it ollama ollama run llama2`
 
-
 ## Example Code and the Matching Models
 
 There are examples available for
@@ -72,4 +70,3 @@ pnpx tsx abort/any-request.ts   # Need llama3.1
 pnpx tsx multimodal/multimodal.ts
 pnpx tsx tools/tools.ts # 
 ```
-
